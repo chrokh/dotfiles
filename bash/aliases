@@ -1,0 +1,10 @@
+alias dots="subl ~/bin/dotfiles"
+alias redot="source ~/.bashrc"
+
+alias g="git status"
+
+alias l="ls -l"
+
+alias oop="cd ~/Sites/opensource"
+alias web="cd ~/Sites/"
+alias clients="cd ~/Sites/clients"
