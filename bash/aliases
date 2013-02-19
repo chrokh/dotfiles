@@ -10,7 +10,6 @@ alias gl="git pull"
 
 # Rake
 alias r="rake"
-alias rf="rake features"
 
 alias l="ls -l"
 
