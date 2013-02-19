@@ -14,3 +14,9 @@ function take {
   mkdir $1
   cd $1
 }
+
+# Tree visuals
+# Originally from:
+# http://reviews.cnet.com/8301-13727_7-10402034-263.html
+# Modified to ignore git, ds_store and contents of tmp
+alias tree="ls -Ra | grep -v ".git/." | grep -v "tmp/." | grep -v ".DS_Store"  | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
