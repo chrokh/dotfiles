@@ -85,4 +85,4 @@ On_IWhite='\e[0;107m'   # White
 
 
 
-PS1="\[$White\]\n\u@\W\ \[$BCyan\][\$(vcprompt -f %b%m%a%u)] \[$Color_Off\]\n♥ "
+PS1="\[$White\]\n\u:\W\\[$BCyan\](\$(vcprompt -f %b%m%a%u)) \[$Color_Off\]\n♥ "
