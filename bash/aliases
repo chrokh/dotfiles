@@ -1,7 +1,12 @@
 alias dots="subl ~/bin/dotfiles"
 alias redot="source ~/.bashrc"
 
+# Git
 alias g="git status"
+alias gd="git diff"
+alias gc="git commit -am"
+alias gp="git push"
+alias gl="git pull"
 
 alias l="ls -l"
 
