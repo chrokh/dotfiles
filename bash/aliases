@@ -8,6 +8,10 @@ alias gc="git commit -am"
 alias gp="git push"
 alias gl="git pull"
 
+# Rake
+alias r="rake"
+alias rf="rake features"
+
 alias l="ls -l"
 
 alias oop="cd ~/Sites/opensource"
