@@ -6,5 +6,11 @@ alias g="git status"
 alias l="ls -l"
 
 alias oop="cd ~/Sites/opensource"
+alias closed="cd ~/Sites/closedsource"
 alias web="cd ~/Sites/"
 alias clients="cd ~/Sites/clients"
+
+function take {
+  mkdir $1
+  cd $1
+}
