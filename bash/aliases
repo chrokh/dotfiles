@@ -10,10 +10,11 @@ alias gl="git pull"
 
 # Rake
 alias r="rake"
+alias rr="rake routes"
 
 alias l="ls -l"
 
-alias oop="cd ~/Sites/opensource"
+alias oos="cd ~/Sites/opensource"
 alias closed="cd ~/Sites/closedsource"
 alias web="cd ~/Sites/"
 alias clients="cd ~/Sites/clients"
