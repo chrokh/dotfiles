@@ -14,7 +14,7 @@ alias rr="rake routes"
 
 alias l="ls -l"
 
-alias oos="cd ~/Sites/opensource"
+alias oss="cd ~/Sites/opensource"
 alias closed="cd ~/Sites/closedsource"
 alias web="cd ~/Sites/"
 alias clients="cd ~/Sites/clients"
