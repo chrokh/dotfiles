@@ -1,10 +1,14 @@
 Until I learn to remember
 
 ~/.bash_profile
-`if [ -f ~/.bashrc ];
+```
+if [ -f ~/.bashrc ];
 then
   . ~/.bashrc
-fi`
+fi
+```
 
 ~/.bashrc
-`. ~/bin/dotfiles/bashrc
+```
+. ~/bin/dotfiles/bashrc
+```
