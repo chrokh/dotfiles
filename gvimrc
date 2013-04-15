@@ -6,6 +6,9 @@ colorscheme molokai
 " Increase font size
 set guifont=Inconsolata:h18
 
+" Maintain block in insert mode
+set guicursor=n-v-c-i:block-Cursor
+
 " Stop blinking cursor
 let &guicursor = &guicursor . ",a:blinkon0"
 
