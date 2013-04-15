@@ -1,7 +1,7 @@
 " Set theme
 syntax enable
 set background=dark
-colorscheme molokai
+colorscheme solarized
 
 " Increase font size
 set guifont=Inconsolata:h18
