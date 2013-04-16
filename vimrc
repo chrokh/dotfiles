@@ -41,6 +41,7 @@ Bundle 'danro/rename.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/BufOnly.vim'
+Bundle 'vim-pandoc/vim-pandoc'
 
 " Required for Vundle and for vim-latex
 filetype indent on
