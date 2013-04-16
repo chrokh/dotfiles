@@ -6,10 +6,7 @@ colorscheme solarized
 " Increase font size
 set guifont=Inconsolata:h18
 
-" Maintain block in insert mode
-set guicursor=n-v-c-i:block-Cursor
-
-" Stop blinking cursor except in insert mode
+" Stop blinking cursor
 set guicursor+=n-v-c:blinkon0
 
 " Show line numbers
