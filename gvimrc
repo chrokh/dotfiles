@@ -4,7 +4,7 @@ set background=dark
 colorscheme solarized
 
 " Increase font size
-set guifont=Inconsolata:h18
+set guifont=Inconsolata:h16
 
 " Stop blinking cursor
 set guicursor+=n-v-c:blinkon0
