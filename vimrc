@@ -29,6 +29,10 @@ map <C-Down> :wincmd j<CR>
 map <C-Up> :wincmd k<CR>
 map <C-Right> :wincmd l<CR>
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+" http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
+cmap w!! %!sudo tee > /dev/null %
+
 " Vundle package manager
 set nocompatible
 filetype off
