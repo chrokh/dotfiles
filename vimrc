@@ -42,6 +42,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/BufOnly.vim'
 Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'tpope/vim-surround'
 
 " Required for Vundle and for vim-latex
 filetype indent on
