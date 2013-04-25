@@ -49,6 +49,7 @@ Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'tpope/vim-surround'
 Bundle 'skwp/vim-rspec'
 Bundle 'qualiabyte/vim-colorstepper'
+Bundle 'godlygeek/tabular'
 
 " Required for Vundle and for vim-latex
 filetype indent on
