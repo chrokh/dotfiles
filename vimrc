@@ -50,6 +50,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'skwp/vim-rspec'
 Bundle 'qualiabyte/vim-colorstepper'
 Bundle 'godlygeek/tabular'
+Bundle 'roman/golden-ratio'
 
 " Required for Vundle and for vim-latex
 filetype indent on
