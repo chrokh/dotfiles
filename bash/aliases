@@ -12,7 +12,7 @@ alias gl="git pull"
 alias r="rake"
 alias rr="rake routes"
 
-alias l="ls -l"
+alias l="ls -la"
 
 alias oss="cd ~/Sites/opensource"
 alias closed="cd ~/Sites/closedsource"
