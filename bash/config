@@ -1,6 +1,7 @@
 
 # Add bin to path
 export PATH=$PATH:~/bin
+export PATH=$PATH:/usr/local/mysql-5.5.23-osx10.6-x86/bin
 
 # Editor of choice
 export EDITOR="subl"
