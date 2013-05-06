@@ -14,6 +14,9 @@ alias rr="rake routes"
 
 alias l="ls -la"
 
+# Interactive php
+alias phpi="phpa-norl"
+
 alias oss="cd ~/Sites/opensource"
 alias closed="cd ~/Sites/closedsource"
 alias web="cd ~/Sites/"
