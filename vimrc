@@ -58,6 +58,8 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'ervandew/supertab'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'me-vlad/python-syntax.vim'
+Bundle 'vim-scripts/django.vim'
 
 " Required for Vundle and for vim-latex
 filetype indent on
