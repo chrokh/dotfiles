@@ -12,6 +12,10 @@ alias gl="git pull"
 alias r="rake"
 alias rr="rake routes"
 
+# Python
+alias py="python3 "
+alias pyman="python3 manage.py"
+
 alias l="ls -la"
 
 # Interactive php
