@@ -25,7 +25,7 @@ map <Tab> :bnext<CR>
 map <S-Tab> :bprevious<CR>
 
 map <C-Left> :wincmd h<CR>
-map <C-h> :wimcmd h<cr>
+map <C-h> :wincmd h<cr>
 map <C-Down> :wincmd j<CR>
 map <C-j> :wincmd j<CR>
 map <C-Up> :wincmd k<CR>
