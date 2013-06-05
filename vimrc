@@ -38,8 +38,8 @@ map <F5> :CommandTFlush<CR>
 
 " Paragraph jumping
 " Want alt but can't figure it out
-map <S-J> {
-map <S-k> }
+map <S-J> }
+map <S-k> {
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 " http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
