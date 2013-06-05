@@ -25,9 +25,13 @@ map <Tab> :bnext<CR>
 map <S-Tab> :bprevious<CR>
 
 map <C-Left> :wincmd h<CR>
+map <C-h> :wimcmd h<cr>
 map <C-Down> :wincmd j<CR>
+map <C-j> :wincmd j<CR>
 map <C-Up> :wincmd k<CR>
+map <C-k> :wincmd k<CR>
 map <C-Right> :wincmd l<CR>
+map <C-l> :wincmd l<CR>
 
 " Map F5 to refresh Command-T
 map <F5> :CommandTFlush<CR>
@@ -43,7 +47,6 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'jcf/vim-latex'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'danro/rename.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdcommenter'
@@ -60,6 +63,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'me-vlad/python-syntax.vim'
 Bundle 'vim-scripts/django.vim'
+Bundle 'flazz/vim-colorschemes'
 
 " Required for Vundle and for vim-latex
 filetype indent on
