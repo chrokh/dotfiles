@@ -4,7 +4,7 @@ set background=dark
 colorscheme desert
 
 " Increase font size
-set guifont=DejaVu\ Sans\ Mono:h16
+set guifont=DejaVu\ Sans\ Mono:h13
 
 " Stop blinking cursor
 set guicursor+=n-v-c:blinkon0
