@@ -86,3 +86,6 @@ filetype plugin on
 " set grepprg=grep\ -nH\ $*
 let g:Tex_ViewRule_pdf = 'Preview'
 let g:Tex_DefaultTargetFormat = 'pdf'
+
+" syntax highlighting on
+syntax on
