@@ -71,6 +71,7 @@ Bundle 'me-vlad/python-syntax.vim'
 Bundle 'vim-scripts/django.vim'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'kien/ctrlp.vim'
 
 
 
