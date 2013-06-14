@@ -33,8 +33,8 @@ map <C-k> :wincmd k<CR>
 map <C-Right> :wincmd l<CR>
 map <C-l> :wincmd l<CR>
 
-" Map F5 to refresh Command-T
-map <F5> :CommandTFlush<CR>
+" Map Ctrl-t to CtrlP-plugin
+map ,t :CtrlP<cr>
 
 " Paragraph jumping
 " Want alt but can't figure it out
@@ -50,6 +50,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
+
 Bundle 'gmarik/vundle'
 Bundle 'jcf/vim-latex'
 Bundle 'danro/rename.vim'
@@ -69,6 +70,9 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'me-vlad/python-syntax.vim'
 Bundle 'vim-scripts/django.vim'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'digitaltoad/vim-jade'
+
+
 
 " Required for Vundle and for vim-latex
 filetype indent on
