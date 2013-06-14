@@ -89,3 +89,4 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 
 " syntax highlighting on
 syntax on
+set t_Co=256
