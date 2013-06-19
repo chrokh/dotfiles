@@ -72,8 +72,7 @@ Bundle 'vim-scripts/django.vim'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'kien/ctrlp.vim'
-
-
+Bundle 'Lokaltog/vim-easymotion'
 
 " Required for Vundle and for vim-latex
 filetype indent on
