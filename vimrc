@@ -92,3 +92,10 @@ set t_Co=256
 
 " line numbers
 set number
+
+" centralize the damn swp files
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp
+set writebackup
