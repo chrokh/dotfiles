@@ -99,3 +99,7 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp
 set writebackup
+
+" make sure cursor is never at edge
+set scrolloff=5
+
