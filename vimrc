@@ -104,3 +104,8 @@ set writebackup
 " make sure cursor is never at edge
 set scrolloff=5
 
+" Unmap arrow keys
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
