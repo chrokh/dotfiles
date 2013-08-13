@@ -114,3 +114,6 @@ map <Down> <Nop>
 if has("autocmd")
   autocmd bufwritepost vimrc source $MYVIMRC
 endif
+" Hotkey for opening vimrc
+nmap <leader>v :tabedit ~/bin/dotfiles/vimrc<CR>
+
