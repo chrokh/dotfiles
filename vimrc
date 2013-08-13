@@ -109,3 +109,8 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+" auto-source vimrc on save
+if has("autocmd")
+  autocmd bufwritepost vimrc source $MYVIMRC
+endif
