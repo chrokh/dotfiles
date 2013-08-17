@@ -9,9 +9,6 @@ set guifont=DejaVu\ Sans\ Mono:h13
 " Stop blinking cursor
 set guicursor+=n-v-c:blinkon0
 
-" Show line numbers
-set number
-
 " Hide NERDTree scrollbars
 set guioptions-=L
 
