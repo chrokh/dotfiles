@@ -1,7 +1,6 @@
 " Set theme
 syntax enable
 set background=dark
-colors lucius
 
 " Increase font size
 set guifont=DejaVu\ Sans\ Mono:h13

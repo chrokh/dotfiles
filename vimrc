@@ -94,6 +94,9 @@ set t_Co=256
 " line numbers
 set number
 
+" colors
+colors lucius
+
 " centralize the damn swp files
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp
