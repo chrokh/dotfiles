@@ -12,11 +12,6 @@ set cindent " Auto indent braces
 " http://stackoverflow.com/questions/8841116/vim-not-recognizing-aliases-when-in-interactive-mode
 set shell=/bin/bash\ --rcfile\ ~/.bash_profile\ -i
 
-" Pathogen, for handling the runtime path
-set nocp
-call pathogen#infect()
-call pathogen#helptags()
-
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
 
