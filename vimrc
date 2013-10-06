@@ -95,7 +95,8 @@ set t_Co=256
 set number
 
 " colors
-colors lucius
+" colors lucius
+colorscheme hybrid
 
 " centralize the damn swp files
 set backup
