@@ -34,7 +34,7 @@ map <C-Right> :wincmd l<CR>
 map <C-l> :wincmd l<CR>
 
 " Map Ctrl-t to CtrlP-plugin
-map ,t :CtrlP<cr>
+map ,p :CtrlP<cr>
 
 " Paragraph jumping
 " Want alt but can't figure it out
