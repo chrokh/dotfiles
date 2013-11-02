@@ -31,9 +31,6 @@ function take {
   cd $1
 }
 
-# Sublime text
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-
 # Open webpage
 function ol {
   open http://localhost:$1
