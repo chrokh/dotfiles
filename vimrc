@@ -1,3 +1,56 @@
+" VUNDLE
+set nocompatible    " be iMproved, required
+filetype off        " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'jcf/vim-latex'
+Plugin 'danro/rename.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-scripts/BufOnly.vim'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'tpope/vim-surround'
+Plugin 'skwp/vim-rspec'
+Plugin 'qualiabyte/vim-colorstepper'
+Plugin 'godlygeek/tabular'
+Plugin 'roman/golden-ratio'
+Plugin 'Townk/vim-autoclose'
+Plugin 'ervandew/supertab'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'me-vlad/python-syntax.vim'
+Plugin 'vim-scripts/django.vim'
+Plugin 'noah/vim256-color'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'csexton/trailertrash.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
+
 let mapleader=","
 
 " Indentation
@@ -40,41 +93,10 @@ map <S-k> {
 " http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
 cmap w!! %!sudo tee > /dev/null %
 
-" Vundle package manager
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'jcf/vim-latex'
-Bundle 'danro/rename.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'vim-scripts/BufOnly.vim'
-Bundle 'vim-pandoc/vim-pandoc'
-Bundle 'tpope/vim-surround'
-Bundle 'skwp/vim-rspec'
-Bundle 'qualiabyte/vim-colorstepper'
-Bundle 'godlygeek/tabular'
-Bundle 'roman/golden-ratio'
-Bundle 'Townk/vim-autoclose'
-Bundle 'ervandew/supertab'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'me-vlad/python-syntax.vim'
-Bundle 'vim-scripts/django.vim'
-Bundle 'noah/vim256-color'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'csexton/trailertrash.vim'
-
-" Required for Vundle and for vim-latex
-filetype indent on
-filetype plugin on
 
 " Required for vim-latex
+filetype plugin on
 " grep will sometimes skip displaying the file name if you
 " search in a singe file. This will confuse Latex-Suite.
 " Set your grep program to always generate a file-name.
