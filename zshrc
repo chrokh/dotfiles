@@ -44,4 +44,4 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/christopherokhravi/.rvm/gems/ruby-1.9.3-p286@global/bin:/Users/christopherokhravi/.rvm/gems/ruby-1.9.3-p286@global/bin:/Users/christopherokhravi/.rvm/rubies/ruby-1.9.3-p286/bin:/Users/christopherokhravi/.rvm/bin:/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/Users/christopherokhravi/bin:/usr/local/mysql-5.5.23-osx10.6-x86/bin
+export PATH=$PATH:/Users/christopherokhravi/.rvm/gems/ruby-1.9.3-p286@global/bin:/Users/christopherokhravi/.rvm/gems/ruby-1.9.3-p286@global/bin:/Users/christopherokhravi/.rvm/rubies/ruby-1.9.3-p286/bin:/Users/christopherokhravi/.rvm/bin:/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/Users/christopherokhravi/bin:/usr/local/mysql-5.5.23-osx10.6-x86/bin:/Users/chris/bin:./node_modules/.bin
