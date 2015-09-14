@@ -41,6 +41,9 @@ DEFAULT_USER="christopherokhravi"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+# rbenv init
+eval "$(rbenv init -)"
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
