@@ -8,6 +8,8 @@ DEFAULT_USER="christopherokhravi"
 
 # Aliases
 alias vi="vim"
+alias del="rmtrash"
+alias can="rmtrash"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
