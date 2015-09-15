@@ -33,6 +33,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'csexton/trailertrash.vim'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -138,4 +139,10 @@ if has("autocmd")
 endif
 " Hotkey for opening vimrc
 nmap <leader>v :tabedit ~/bin/dotfiles/vimrc<CR>
+
+
+" Use tab to expand Emmet expressions
+" https://coderwall.com/p/_uhrxw/using-tab-key-as-abbreviation-expander-on-emmet-vim
+" Not working because of conflict with supertab
+"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
