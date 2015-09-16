@@ -49,3 +49,15 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/Users/christopherokhravi/bin:/usr/local/mysql-5.5.23-osx10.6-x86/bin:/Users/chris/bin:./node_modules/.bin:$HOME/.rbenv/bin:$PATH
+
+
+# Processing.org short-hand syntax
+function pjava {
+  if [[ "$1" = /* ]];
+  then
+    processing-java --sketch="$1" --output=/tmp/processing.org --force --run
+  else
+    processing-java --sketch=`pwd`/"$1" --output=/tmp/processing.org --force --run
+  fi
+}
+
