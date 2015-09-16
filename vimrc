@@ -63,9 +63,10 @@ set expandtab " Tabs -> Spaces
 set autoindent " Follow indent on next line
 set cindent " Auto indent braces
 
-" Required for running custom aliases
-" http://stackoverflow.com/questions/8841116/vim-not-recognizing-aliases-when-in-interactive-mode
-set shell=/bin/bash\ --rcfile\ ~/.bash_profile\ -i
+" Ensure custom aliases are available
+" http://unix.stackexchange.com/questions/113462/how-can-i-make-shell-aliases-available-when-shelling-out-from-vim
+" Is a hack according to: https://github.com/tpope/vim-sensible/issues/29
+:set shellcmdflag=-ic
 
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
