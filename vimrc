@@ -142,6 +142,9 @@ endif
 nmap <leader>v :tabedit ~/bin/dotfiles/vimrc<CR>
 
 
+" Custom ignores for CtrlP
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|DS_Store\'
+
 " Use tab to expand Emmet expressions
 " https://coderwall.com/p/_uhrxw/using-tab-key-as-abbreviation-expander-on-emmet-vim
 " Not working because of conflict with supertab
