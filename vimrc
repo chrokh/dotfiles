@@ -135,3 +135,7 @@ set guioptions-=L
 
 " Hide scrollbars
 set guioptions-=r
+
+" Searching
+set ignorecase
+set smartcase
