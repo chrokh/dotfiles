@@ -1,54 +1,33 @@
-" VUNDLE
-set nocompatible    " be iMproved, required
-filetype off        " required
+" ==== BEGIN VIM-PLUG ====
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+Plug 'jcf/vim-latex'
+Plug 'danro/rename.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-scripts/BufOnly.vim'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'tpope/vim-surround'
+Plug 'skwp/vim-rspec'
+Plug 'qualiabyte/vim-colorstepper'
+Plug 'godlygeek/tabular'
+Plug 'roman/golden-ratio'
+Plug 'Townk/vim-autoclose'
+Plug 'ervandew/supertab'
+Plug 'vim-ruby/vim-ruby'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'me-vlad/python-syntax.vim'
+Plug 'vim-scripts/django.vim'
+Plug 'noah/vim256-color'
+Plug 'digitaltoad/vim-jade'
+Plug 'kien/ctrlp.vim'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'csexton/trailertrash.vim'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'mattn/emmet-vim'
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'jcf/vim-latex'
-Plugin 'danro/rename.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-scripts/BufOnly.vim'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'tpope/vim-surround'
-Plugin 'skwp/vim-rspec'
-Plugin 'qualiabyte/vim-colorstepper'
-Plugin 'godlygeek/tabular'
-Plugin 'roman/golden-ratio'
-Plugin 'Townk/vim-autoclose'
-Plugin 'ervandew/supertab'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'me-vlad/python-syntax.vim'
-Plugin 'vim-scripts/django.vim'
-Plugin 'noah/vim256-color'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'csexton/trailertrash.vim'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'mattn/emmet-vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+call plug#end()
+" ==== END VIM-PLUG ====
 
 
 
@@ -129,15 +108,15 @@ set writebackup
 set scrolloff=5
 
 " Unmap arrow keys
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+nmap <Left> <Nop>
+nmap <Right> <Nop>
+nmap <Up> <Nop>
+nmap <Down> <Nop>
 
 " auto-source vimrc on save
-if has("autocmd")
-  autocmd bufwritepost vimrc source $MYVIMRC
-endif
+" if has("autocmd")
+"   autocmd bufwritepost vimrc source $MYVIMRC
+" endif
 " Hotkey for opening vimrc
 nmap <leader>v :tabedit ~/bin/dotfiles/vimrc<CR>
 
