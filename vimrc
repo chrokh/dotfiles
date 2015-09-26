@@ -9,7 +9,6 @@ Plug 'vim-scripts/BufOnly.vim'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'tpope/vim-surround'
 Plug 'skwp/vim-rspec'
-Plug 'qualiabyte/vim-colorstepper'
 Plug 'godlygeek/tabular'
 Plug 'roman/golden-ratio'
 Plug 'Townk/vim-autoclose'
@@ -18,7 +17,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'me-vlad/python-syntax.vim'
 Plug 'vim-scripts/django.vim'
-Plug 'noah/vim256-color'
 Plug 'digitaltoad/vim-jade'
 Plug 'kien/ctrlp.vim'
 Plug 'Lokaltog/vim-easymotion'
@@ -92,10 +90,6 @@ set t_Co=256
 
 " line numbers
 set number
-
-" colors
-" colors lucius
-colorscheme hybrid
 
 " centralize the damn swp files
 set backup
