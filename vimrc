@@ -84,10 +84,6 @@ filetype plugin on
 let g:Tex_ViewRule_pdf = 'Preview'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
-" syntax highlighting on
-syntax on
-set t_Co=256
-
 " line numbers
 set number
 
@@ -123,8 +119,9 @@ let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|DS_Store\'
 " Not working because of conflict with supertab
 "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
-" Set theme
+" Syntax and colors
 syntax enable
+set t_Co=256
 set background=dark
 
 " Increase font size
