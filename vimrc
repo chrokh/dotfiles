@@ -139,3 +139,4 @@ set guioptions-=r
 " Searching
 set ignorecase
 set smartcase
+set incsearch
