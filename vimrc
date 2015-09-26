@@ -129,3 +129,18 @@ let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|DS_Store\'
 " Not working because of conflict with supertab
 "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
+" Set theme
+syntax enable
+set background=dark
+
+" Increase font size
+set guifont=DejaVu\ Sans\ Mono:h13
+
+" Stop blinking cursor
+set guicursor+=n-v-c:blinkon0
+
+" Hide NERDTree scrollbars
+set guioptions-=L
+
+" Hide scrollbars
+set guioptions-=r
