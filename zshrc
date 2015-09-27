@@ -71,6 +71,8 @@ function pjava {
 # Dependencies:
 #   https://github.com/chriskempson/base16-shell
 #   https://github.com/chriskempson/base16-vim
+SHELL_COLOR_CONF="$HOME/.bashbg"
+VIM_COLOR_CONF="$HOME/.vimbg"
 function theme {
   local default_name="default"
   local default_back="dark"
@@ -85,17 +87,21 @@ function theme {
   local file=${base}${them}.${back}${sufx}
 
   # Verbose
-  echo "vim colorscheme:     $them"
-  echo "vim background:      $back"
-  echo "shell colorscheme:   $file"
+  echo "vim"
+  echo "  |__ conf        $VIM_COLOR_CONF"
+  echo "  |__ theme       $them"
+  echo "  |__ background  $back"
+  echo "shell"
+  echo "  |__ conf        $SHELL_COLOR_CONF"
+  echo "  |__ theme       $file"
 
   # Set bash colors
-  source "$file"
+  echo "source $file" > $SHELL_COLOR_CONF
+  source $SHELL_COLOR_CONF
 
   # Set vim colors
-  local vimconf="$HOME/.vimbg"
-  echo "set background=$back" > $vimconf
-  echo "colorscheme $them" >> $vimconf
+  echo "set background=$back" > $VIM_COLOR_CONF
+  echo "colorscheme $them" >> $VIM_COLOR_CONF
 }
-theme ocean dark
+source $SHELL_COLOR_CONF
 

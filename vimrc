@@ -124,7 +124,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|DS_Store\'
 set t_Co=256
 let base16colorspace=256
 syntax enable
-source ~/.vimbg
+source $VIM_COLOR_CONF
 
 " Increase font size
 set guifont=DejaVu\ Sans\ Mono:h13
