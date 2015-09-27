@@ -23,6 +23,7 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'csexton/trailertrash.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'mattn/emmet-vim'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 " ==== END VIM-PLUG ====
@@ -120,9 +121,10 @@ let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|DS_Store\'
 "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " Syntax and colors
-syntax enable
 set t_Co=256
-set background=dark
+let base16colorspace=256
+syntax enable
+source ~/.vimbg
 
 " Increase font size
 set guifont=DejaVu\ Sans\ Mono:h13

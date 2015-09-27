@@ -64,3 +64,38 @@ function pjava {
   fi
 }
 
+
+# Base16 Shell helper
+# Inspired by:
+#   http://johnmorales.com/blog/2015/01/09/base16-shell-tmux-vim-color-switching-dead-simple/
+# Dependencies:
+#   https://github.com/chriskempson/base16-shell
+#   https://github.com/chriskempson/base16-vim
+function theme {
+  local default_name="default"
+  local default_back="dark"
+
+  local name="${1:-$(echo $default_name)}"
+  local back="${2:-$(echo "dark")}"
+  local base="$HOME/.config/base16-shell/"
+  local prfx="base16-"
+  local sufx=".sh"
+
+  local them=${prfx}${name}
+  local file=${base}${them}.${back}${sufx}
+
+  # Verbose
+  echo "vim colorscheme:     $them"
+  echo "vim background:      $back"
+  echo "shell colorscheme:   $file"
+
+  # Set bash colors
+  source "$file"
+
+  # Set vim colors
+  local vimconf="$HOME/.vimbg"
+  echo "set background=$back" > $vimconf
+  echo "colorscheme $them" >> $vimconf
+}
+theme ocean dark
+
