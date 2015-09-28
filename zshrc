@@ -71,8 +71,8 @@ function pjava {
 # Dependencies:
 #   https://github.com/chriskempson/base16-shell
 #   https://github.com/chriskempson/base16-vim
-SHELL_COLOR_CONF="$HOME/.bashbg"
-VIM_COLOR_CONF="$HOME/.vimbg"
+export SHELL_COLOR_CONF="$HOME/.bashbg"
+export VIM_COLOR_CONF="$HOME/.vimbg"
 function theme {
   local default_name="default"
   local default_back="dark"
