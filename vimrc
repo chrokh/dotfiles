@@ -44,9 +44,7 @@ set cindent " Auto indent braces
 set backspace=indent,eol,start
 
 " Ensure custom aliases are available
-" http://unix.stackexchange.com/questions/113462/how-can-i-make-shell-aliases-available-when-shelling-out-from-vim
-" Is a hack according to: https://github.com/tpope/vim-sensible/issues/29
-set shellcmdflag=-ic
+set shell=/bin/bash\ -i
 
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
