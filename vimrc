@@ -88,6 +88,9 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 " line numbers
 set number
 
+" Disable initial code folding
+set nofoldenable
+
 " centralize the damn swp files
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp
