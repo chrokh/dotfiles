@@ -55,14 +55,14 @@ map <Leader>n :NERDTreeToggle<CR>
 map <Tab> :bnext<CR>
 map <S-Tab> :bprevious<CR>
 
-map <C-Left> :wincmd h<CR>
-map <C-h> :wincmd h<cr>
-map <C-Down> :wincmd j<CR>
-map <C-j> :wincmd j<CR>
-map <C-Up> :wincmd k<CR>
-map <C-k> :wincmd k<CR>
-map <C-Right> :wincmd l<CR>
-map <C-l> :wincmd l<CR>
+noremap <C-H> <C-W><C-H>
+noremap <C-J> <C-W><C-J>
+noremap <C-K> <C-W><C-K>
+noremap <C-L> <C-W><C-L>
+noremap <C-LEFT> <C-W><C-H>
+noremap <C-DOWN> <C-W><C-J>
+noremap <C-UP> <C-W><C-K>
+noremap <C-RIGHT> <C-W><C-L>
 
 " Map Ctrl-t to CtrlP-plugin
 map ,p :CtrlP<cr>
