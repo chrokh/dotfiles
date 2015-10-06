@@ -24,6 +24,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'mattn/emmet-vim'
 Plug 'chriskempson/base16-vim'
 Plug 'shime/vim-livedown'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 " ==== END VIM-PLUG ====
