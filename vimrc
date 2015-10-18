@@ -48,6 +48,10 @@ set backspace=indent,eol,start
 " Ensure custom aliases are available
 set shell=/bin/bash\ -i
 
+" Set encoding
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
+
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
 
