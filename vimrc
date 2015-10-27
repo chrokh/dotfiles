@@ -52,6 +52,13 @@ set shell=/bin/bash\ -i
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
+" Persist undo over buffer switches and exits
+:silent call system('mkdir -p ' . $HOME . '/.vim/undo')
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
+
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
 
