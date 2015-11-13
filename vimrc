@@ -59,6 +59,12 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
 
+"Better line wrapping
+set wrap
+set linebreak
+set textwidth=0
+set wrapmargin=0
+
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
 
