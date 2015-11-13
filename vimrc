@@ -104,6 +104,14 @@ filetype plugin on
 let g:Tex_ViewRule_pdf = 'Preview'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
+" redef C-j to C-g
+" Vim LaTeX claims <C-J> but I want to use
+" it to navigate the the split below
+" http://tex.stackexchange.com/questions/3654/change-c-j-binding-for-vim-latex
+imap <C-g> <Plug>IMAP_JumpForward
+nmap <C-g> <Plug>IMAP_JumpForward
+
+
 " line numbers
 set number
 
