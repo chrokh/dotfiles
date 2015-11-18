@@ -1,5 +1,3 @@
-Until I learn to remember
-
 ~/.bash_profile
 ```
 if [ -f ~/.bashrc ];
@@ -11,4 +9,9 @@ fi
 ~/.bashrc
 ```
 . ~/bin/dotfiles/bashrc
+```
+
+~/.tmux.conf
+```
+. ~/bin/dotfiles/tmux.conf
 ```
