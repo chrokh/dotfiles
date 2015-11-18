@@ -65,6 +65,9 @@ set linebreak
 set textwidth=0
 set wrapmargin=0
 
+" Allow mouse
+set mouse=a
+
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
 
