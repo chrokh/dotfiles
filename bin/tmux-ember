@@ -1,0 +1,23 @@
+#!/bin/bash
+SESSION="ember"
+
+tmux new-session -d -s $SESSION
+
+# vi
+tmux rename-window -t $SESSION:1 "vi"
+tmux send-keys -t $SESSION:1 "vi" C-m
+
+# tests
+tmux new-window -d -t $SESSION -n "test"
+tmux send-keys -t $SESSION:2 "ember test --server" C-m
+
+# server
+tmux new-window -d -t $SESSION -n "server"
+tmux send-keys -t $SESSION:3 "ember s" C-m
+
+# make test window 'last' window
+tmux select-window -t $SESSION:2
+tmux select-window -t $SESSION:1
+
+tmux attach -t $SESSION
+
