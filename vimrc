@@ -84,8 +84,10 @@ noremap <C-DOWN> <C-W><C-J>
 noremap <C-UP> <C-W><C-K>
 noremap <C-RIGHT> <C-W><C-L>
 
-" Map Ctrl-t to CtrlP-plugin
+" Map Ctrl-p to CtrlP-plugin
 map ,p :CtrlP<cr>
+" Map Ctrl-t to CtrlP-plugin matching open buffers only
+map ,t :CtrlPBuffer<cr>
 
 " Paragraph jumping
 " Want alt but can't figure it out
