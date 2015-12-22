@@ -65,6 +65,9 @@ set linebreak
 set textwidth=0
 set wrapmargin=0
 
+" Highlight current line
+set cursorline
+
 " Allow mouse
 set mouse=a
 
