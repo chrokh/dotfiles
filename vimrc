@@ -59,6 +59,9 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
 
+" Allow switching between buffers without saving
+set hidden
+
 "Better line wrapping
 set wrap
 set linebreak
