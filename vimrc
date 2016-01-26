@@ -153,6 +153,9 @@ nmap <leader>v :tabedit ~/bin/dotfiles/vimrc<CR>
 " Custom ignores for CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|DS_Store\'
 
+" Let CtrlP ignore everything in gitignore
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 " Use tab to expand Emmet expressions
 " https://coderwall.com/p/_uhrxw/using-tab-key-as-abbreviation-expander-on-emmet-vim
 " Not working because of conflict with supertab
