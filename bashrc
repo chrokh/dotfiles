@@ -5,3 +5,5 @@
 # Solving RVM is not a function
 # http://stackoverflow.com/questions/8663936/how-do-i-change-my-ruby-version-using-rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+source ~/bin/dotfiles/bin/shellcolors.sh
