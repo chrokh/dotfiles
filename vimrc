@@ -130,6 +130,7 @@ set number
 set nofoldenable
 
 " centralize the damn swp files
+:silent call system('mkdir -p ' . $HOME . '/.vim-tmp')
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp
 set backupskip=/tmp/*,/private/tmp/*
