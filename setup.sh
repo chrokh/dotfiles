@@ -13,3 +13,6 @@ echo "source ~/bin/dotfiles/zshrc" > ~/.zshrc
 touch ~/.vimrc
 cp ~/.vimrc ~/.vimrc.backup
 echo "source ~/bin/dotfiles/vimrc" > ~/.vimrc
+
+# Install base16-shell for shell color management
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
