@@ -63,4 +63,4 @@ function pjava {
   fi
 }
 
-source bin/shellcolors.sh
+source ~/bin/dotfiles/bin/shellcolors.sh
