@@ -36,5 +36,11 @@ function theme {
   echo "set background=$back" > $VIM_COLOR_CONF
   echo "colorscheme $them" >> $VIM_COLOR_CONF
 }
+
+# set default theme if not set
+if [ ! -f $SHELL_COLOR_CONF ]; then
+  theme default
+fi
+
 source $SHELL_COLOR_CONF
 
