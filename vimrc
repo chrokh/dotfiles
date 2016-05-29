@@ -1,7 +1,6 @@
 " ==== BEGIN VIM-PLUG ====
 call plug#begin('~/.vim/plugged')
 
-Plug 'jcf/vim-latex'
 Plug 'danro/rename.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'scrooloose/nerdcommenter'
