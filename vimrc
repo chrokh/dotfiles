@@ -161,8 +161,15 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 
 " Use tab to expand Emmet expressions
 " https://coderwall.com/p/_uhrxw/using-tab-key-as-abbreviation-expander-on-emmet-vim
-" Not working because of conflict with supertab
-"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+"
+" Not working because of conflict with supertab:
+" imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+"
+" Still requires , to be pressed after
+" let g:user_emmet_leader_key='<C-z>'
+"
+" Using C-e in insert mode
+imap <expr> <C-e> emmet#expandAbbrIntelligent("C-e")
 
 " Syntax and colors
 set t_Co=256
