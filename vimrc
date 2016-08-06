@@ -171,11 +171,18 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Using C-e in insert mode
 imap <expr> <C-e> emmet#expandAbbrIntelligent("C-e")
 
+
 " Syntax and colors
 set t_Co=256
 let base16colorspace=256
 syntax enable
-source $VIM_COLOR_CONF
+
+" Source color configuration
+" https://github.com/chrokh/shell-colors
+if filereadable(expand("~/.vimrc_background"))
+  "let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 " Increase font size
 set guifont=DejaVu\ Sans\ Mono:h13
