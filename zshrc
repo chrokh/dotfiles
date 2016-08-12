@@ -63,3 +63,7 @@ function pjava {
   fi
 }
 
+
+# https://github.com/chrokh/shell-colors
+theme
+
