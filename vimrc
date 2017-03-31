@@ -14,6 +14,7 @@ Plug 'mattn/emmet-vim'
 Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'pangloss/vim-javascript'
+Plug 'digitaltoad/vim-pug'
 call plug#end()
 " ==== END VIM-PLUG ====
 
