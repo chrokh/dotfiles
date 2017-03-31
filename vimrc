@@ -35,7 +35,7 @@ set cindent " Auto indent braces
 set backspace=indent,eol,start
 
 " Ensure custom aliases are available
-set shell=/bin/bash\ -i
+"set shell=/bin/bash\ -i
 
 " Set encoding
 set encoding=utf-8  " The encoding displayed.
