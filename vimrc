@@ -1,30 +1,18 @@
 " ==== BEGIN VIM-PLUG ====
 call plug#begin('~/.vim/plugged')
-
 Plug 'danro/rename.vim'
-Plug 'kchmck/vim-coffee-script'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'tpope/vim-surround'
-Plug 'skwp/vim-rspec'
 Plug 'godlygeek/tabular'
 Plug 'roman/golden-ratio'
-Plug 'jiangmiao/auto-pairs'
 Plug 'ervandew/supertab'
 Plug 'vim-ruby/vim-ruby'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'me-vlad/python-syntax.vim'
-Plug 'vim-scripts/django.vim'
-Plug 'digitaltoad/vim-jade'
 Plug 'kien/ctrlp.vim'
-Plug 'Lokaltog/vim-easymotion'
 Plug 'csexton/trailertrash.vim'
-Plug 'mustache/vim-mustache-handlebars'
 Plug 'mattn/emmet-vim'
 Plug 'chriskempson/base16-vim'
-Plug 'shime/vim-livedown'
 Plug 'scrooloose/nerdtree'
-
 call plug#end()
 " ==== END VIM-PLUG ====
 
