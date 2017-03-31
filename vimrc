@@ -66,9 +66,11 @@ set mouse=a
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
 
-" Cycle through buffers
-map <Tab> :bnext<CR>
-map <S-Tab> :bprevious<CR>
+" Use tab to navigate jumplist
+" Remember that <Tab> and <C-I> are equivalent.
+" http://stackoverflow.com/questions/18175647/jump-with-ctrl-i-doesnt-work-in-my-macvim-but-ctrl-o-works
+"map <Tab> <C-I>
+map <S-Tab> <C-O>
 
 noremap <C-H> <C-W><C-H>
 noremap <C-J> <C-W><C-J>
