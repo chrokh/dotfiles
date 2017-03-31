@@ -13,6 +13,7 @@ Plug 'csexton/trailertrash.vim'
 Plug 'mattn/emmet-vim'
 Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 " ==== END VIM-PLUG ====
 
