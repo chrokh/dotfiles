@@ -14,7 +14,11 @@ Plug 'mattn/emmet-vim'
 Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'digitaltoad/vim-pug'
+Plug 'leafgarland/typescript-vim'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'reasonml-editor/vim-reason-plus'
 call plug#end()
 " ==== END VIM-PLUG ====
 
@@ -192,3 +196,6 @@ set guioptions-=r
 set ignorecase
 set smartcase
 set incsearch
+
+" JSX
+let g:jsx_ext_required = 0
