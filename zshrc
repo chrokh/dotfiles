@@ -64,6 +64,6 @@ function pjava {
 }
 
 
-# https://github.com/chrokh/shell-colors
-theme
+# https://github.com/AuditeMarlow/base16-manager/
+base16-manager set materia
 
