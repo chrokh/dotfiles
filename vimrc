@@ -175,10 +175,10 @@ syntax enable
 
 " Source color configuration
 " https://github.com/chrokh/shell-colors
-if filereadable(expand("~/.vimrc_background"))
-  "let base16colorspace=256
-  source ~/.vimrc_background
-endif
+"if filereadable(expand("~/.vimrc_background"))
+"  "let base16colorspace=256
+"  source ~/.vimrc_background
+"endif
 
 " Increase font size
 set guifont=DejaVu\ Sans\ Mono:h13
