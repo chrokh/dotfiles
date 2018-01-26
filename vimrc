@@ -170,14 +170,13 @@ imap <expr> <C-e> emmet#expandAbbrIntelligent("C-e")
 
 " Syntax and colors
 set t_Co=256
-let base16colorspace=256
+let base16colorspace=256 " https://github.com/chriskempson/base16-vim
 syntax enable
 
 " Source color configuration
-" https://github.com/chrokh/shell-colors
-"if filereadable(expand("~/.vimrc_background"))
-"  "let base16colorspace=256
-"  source ~/.vimrc_background
+"https://github.com/AuditeMarlow/base16-manager
+"if filereadable(expand("~/.vim/colorscheme.vim"))
+"  source ~/.vim/colorscheme.vim
 "endif
 
 " Increase font size
