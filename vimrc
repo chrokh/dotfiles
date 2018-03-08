@@ -73,6 +73,9 @@ set mouse=a
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
 
+" Find and replace based on word under cursor
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
 " Use tab to navigate jumplist
 " Remember that <Tab> and <C-I> are equivalent.
 " http://stackoverflow.com/questions/18175647/jump-with-ctrl-i-doesnt-work-in-my-macvim-but-ctrl-o-works
