@@ -64,6 +64,9 @@ set wrapmargin=0
 " Highlight current line
 set cursorline
 
+" Show current column
+set ruler
+
 " Allow mouse
 set mouse=a
 
