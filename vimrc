@@ -19,6 +19,7 @@ Plug 'digitaltoad/vim-pug'
 Plug 'leafgarland/typescript-vim'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'reasonml-editor/vim-reason-plus'
+Plug 'mileszs/ack.vim'
 call plug#end()
 " ==== END VIM-PLUG ====
 
