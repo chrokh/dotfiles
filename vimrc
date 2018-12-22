@@ -79,6 +79,9 @@ set ruler
 " Allow mouse
 set mouse=a
 
+" Change line width (for e.g. gqq) from the standard 80
+" set tw=70
+
 " Map NERDTree to leader-n
 map <Leader>n :NERDTreeToggle<CR>
 
