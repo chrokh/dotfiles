@@ -1,3 +1,6 @@
+# Vim
+alias vi="vim"
+
 alias dots="subl ~/bin/dotfiles"
 alias redot="source ~/.bashrc"
 
