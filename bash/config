@@ -5,7 +5,7 @@ export PATH=$PATH:/usr/local/mysql-5.5.23-osx10.6-x86/bin
 export PATH=/usr/local/php5/bin:$PATH
 
 # Editor of choice
-export EDITOR="subl"
+export EDITOR="vim"
 
 
 # Color from:
