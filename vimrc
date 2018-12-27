@@ -192,10 +192,10 @@ let base16colorspace=256 " https://github.com/chriskempson/base16-vim
 syntax enable
 
 " Source color configuration
-"https://github.com/AuditeMarlow/base16-manager
-"if filereadable(expand("~/.vim/colorscheme.vim"))
-"  source ~/.vim/colorscheme.vim
-"endif
+" https://github.com/AuditeMarlow/base16-manager
+if filereadable(expand("~/.vim/colorscheme.vim"))
+  source ~/.vim/colorscheme.vim
+endif
 
 " Increase font size
 set guifont=DejaVu\ Sans\ Mono:h13
