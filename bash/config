@@ -7,6 +7,10 @@ export PATH=/usr/local/php5/bin:$PATH
 # Editor of choice
 export EDITOR="vim"
 
+# Set npm global install directory and n (node version manager) prefix
+npm config set prefix ~/.npm-global
+export PATH=~/.npm-global/bin:$PATH
+export N_PREFIX=~/.n
 
 # Color from:
 # https://wiki.archlinux.org/index.php/Color_Bash_Prompt
