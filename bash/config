@@ -92,3 +92,5 @@ On_IWhite='\e[0;107m'   # White
 
 PS1="\W\\[$BCyan\](\$)\[$Color_Off\] \[$BYellow\]⌁\[$Color_Off\] "
 
+# https://github.com/AuditeMarlow/base16-manager/
+base16-manager set dracula
