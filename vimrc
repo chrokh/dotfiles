@@ -198,9 +198,9 @@ if filereadable(expand("~/.vim/colorscheme.vim"))
 endif
 
 " Searching
-set ignorecase
-set smartcase
-set incsearch
+set ignorecase " Ignore case
+set smartcase  " Don't ignore case if uppercase letter present
+set incsearch  " Show next match while searching
 
 " JSX
 let g:jsx_ext_required = 0
