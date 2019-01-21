@@ -216,3 +216,8 @@ set incsearch
 
 " JSX
 let g:jsx_ext_required = 0
+
+" Maximize current split horizontally and vertically
+map <C-W><Space> <C-W>_<C-W>\|
+map <C-W>m <C-W>_<C-W>\|
+
