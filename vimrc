@@ -142,12 +142,10 @@ set number
 " Disable initial code folding
 set nofoldenable
 
-" centralize the damn swp files
-:silent call system('mkdir -p ' . $HOME . '/.vim-tmp')
-set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp
-set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp
+" Centralize swap files
+" https://vi.stackexchange.com/questions/177/what-is-the-purpose-of-swap-files
+:silent call system('mkdir -p ~/.vim/tmp')
+set directory^=~/.vim/tmp//
 set writebackup
 
 " make sure cursor is never at edge
