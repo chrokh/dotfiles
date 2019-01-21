@@ -197,18 +197,6 @@ if filereadable(expand("~/.vim/colorscheme.vim"))
   source ~/.vim/colorscheme.vim
 endif
 
-" Increase font size
-set guifont=DejaVu\ Sans\ Mono:h13
-
-" Stop blinking cursor
-set guicursor+=n-v-c:blinkon0
-
-" Hide NERDTree scrollbars
-set guioptions-=L
-
-" Hide scrollbars
-set guioptions-=r
-
 " Searching
 set ignorecase
 set smartcase
