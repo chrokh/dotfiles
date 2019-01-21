@@ -12,6 +12,10 @@ npm config set prefix ~/.npm-global
 export PATH=~/.npm-global/bin:$PATH
 export N_PREFIX=~/.n
 
+# Set default options for less
+# This e.g. makes git diffs always paginate
+export LESS=iRc
+
 # Color from:
 # https://wiki.archlinux.org/index.php/Color_Bash_Prompt
 #
