@@ -12,6 +12,7 @@ alias gc="git commit"
 alias gp="git push"
 alias gl="git pull"
 alias ga="git add"
+alias glog='git log --oneline --decorate --graph'
 
 # Rake
 alias r="rake"
