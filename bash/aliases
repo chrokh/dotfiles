@@ -5,11 +5,13 @@ alias dots="subl ~/bin/dotfiles"
 alias redot="source ~/.bashrc"
 
 # Git
-alias g="git status"
+alias g="git"
+alias gst="git status"
 alias gd="git diff"
-alias gc="git commit -am"
+alias gc="git commit"
 alias gp="git push"
 alias gl="git pull"
+alias ga="git add"
 
 # Rake
 alias r="rake"
