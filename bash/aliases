@@ -38,6 +38,9 @@ function take {
   cd $1
 }
 
+# Alias xdg-open if it exists
+command -v xdg-open && alias open=xdg-open
+
 # Tree visuals
 # Originally from:
 # http://reviews.cnet.com/8301-13727_7-10402034-263.html
