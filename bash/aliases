@@ -38,11 +38,6 @@ function take {
   cd $1
 }
 
-# Open webpage
-function ol {
-  open http://localhost:$1
-}
-
 # Tree visuals
 # Originally from:
 # http://reviews.cnet.com/8301-13727_7-10402034-263.html
@@ -51,15 +46,3 @@ function tree {
   ls -Ra $1 | grep -v ".git/." | grep -v "tmp/." | grep -v ".DS_Store"  | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'
 }
 
-# Csharp compilation and running of files
-# Intended only for console applications
-function csmake {
-  echo ""
-  echo "~~~~~~~~~ Build output ~~~~~~~~~"
-  gmcs $1 -out:$1.exe
-  echo ""
-  echo "~~~~~~~~~ Execution ~~~~~~~~~"
-  mono $1.exe
-  echo "~~~~~~~~~ Build output ~~~~~~~~~"
-  echo ""
-}
