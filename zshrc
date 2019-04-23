@@ -67,3 +67,7 @@ function pjava {
 # https://github.com/AuditeMarlow/base16-manager/
 base16-manager set materia
 
+# Set locale since R is whining
+# https://stackoverflow.com/questions/9689104/installing-r-on-mac-warning-messages-setting-lc-ctype-failed-using-c
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
