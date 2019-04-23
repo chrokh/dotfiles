@@ -65,7 +65,7 @@ set undoreload=10000
 set hidden
 
 "Better line wrapping
-set wrap
+set nowrap
 set linebreak
 set textwidth=0
 set wrapmargin=0
