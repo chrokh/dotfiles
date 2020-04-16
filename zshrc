@@ -71,3 +71,7 @@ base16-manager set materia
 # https://stackoverflow.com/questions/9689104/installing-r-on-mac-warning-messages-setting-lc-ctype-failed-using-c
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# Suggested by install script when installing Haskell using gcup (to put ghc in path)
+# https://www.haskell.org/ghcup/
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
