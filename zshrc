@@ -50,6 +50,9 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/php5/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/Users/christopherokhravi/bin:/usr/local/mysql-5.5.23-osx10.6-x86/bin:/Users/chris/bin:./node_modules/.bin:$HOME/.rbenv/bin:$PATH
 
+# Add Homebrew's sbin to PATH
+export PATH="/usr/local/sbin:$PATH"
+
 # rbenv init
 eval "$(rbenv init -)"
 
