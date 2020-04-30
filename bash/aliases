@@ -1,12 +1,19 @@
+# Vim
+alias vi="vim"
+
 alias dots="subl ~/bin/dotfiles"
 alias redot="source ~/.bashrc"
 
 # Git
-alias g="git status"
+alias g="git"
+alias gst="git status"
 alias gd="git diff"
-alias gc="git commit -am"
+alias gc="git commit"
+alias gco="git checkout"
 alias gp="git push"
 alias gl="git pull"
+alias ga="git add"
+alias glog='git log --oneline --decorate --graph'
 
 # Rake
 alias r="rake"
@@ -31,10 +38,8 @@ function take {
   cd $1
 }
 
-# Open webpage
-function ol {
-  open http://localhost:$1
-}
+# Alias xdg-open if it exists
+command -v xdg-open && alias open=xdg-open
 
 # Tree visuals
 # Originally from:
@@ -44,15 +49,3 @@ function tree {
   ls -Ra $1 | grep -v ".git/." | grep -v "tmp/." | grep -v ".DS_Store"  | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'
 }
 
-# Csharp compilation and running of files
-# Intended only for console applications
-function csmake {
-  echo ""
-  echo "~~~~~~~~~ Build output ~~~~~~~~~"
-  gmcs $1 -out:$1.exe
-  echo ""
-  echo "~~~~~~~~~ Execution ~~~~~~~~~"
-  mono $1.exe
-  echo "~~~~~~~~~ Build output ~~~~~~~~~"
-  echo ""
-}

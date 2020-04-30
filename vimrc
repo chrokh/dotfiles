@@ -142,12 +142,10 @@ set number
 " Disable initial code folding
 set nofoldenable
 
-" centralize the damn swp files
-:silent call system('mkdir -p ' . $HOME . '/.vim-tmp')
-set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp
-set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp
+" Centralize swap files
+" https://vi.stackexchange.com/questions/177/what-is-the-purpose-of-swap-files
+:silent call system('mkdir -p ~/.vim/tmp')
+set directory^=~/.vim/tmp//
 set writebackup
 
 " make sure cursor is never at edge
@@ -192,27 +190,20 @@ let base16colorspace=256 " https://github.com/chriskempson/base16-vim
 syntax enable
 
 " Source color configuration
-"https://github.com/AuditeMarlow/base16-manager
-"if filereadable(expand("~/.vim/colorscheme.vim"))
-"  source ~/.vim/colorscheme.vim
-"endif
-
-" Increase font size
-set guifont=DejaVu\ Sans\ Mono:h13
-
-" Stop blinking cursor
-set guicursor+=n-v-c:blinkon0
-
-" Hide NERDTree scrollbars
-set guioptions-=L
-
-" Hide scrollbars
-set guioptions-=r
+" https://github.com/AuditeMarlow/base16-manager
+if filereadable(expand("~/.vim/colorscheme.vim"))
+  source ~/.vim/colorscheme.vim
+endif
 
 " Searching
-set ignorecase
-set smartcase
-set incsearch
+set ignorecase " Ignore case
+set smartcase  " Don't ignore case if uppercase letter present
+set incsearch  " Show next match while searching
 
 " JSX
 let g:jsx_ext_required = 0
+
+" Maximize current split horizontally and vertically
+map <C-W><Space> <C-W>_<C-W>\|
+map <C-W>m <C-W>_<C-W>\|
+

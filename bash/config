@@ -5,8 +5,25 @@ export PATH=$PATH:/usr/local/mysql-5.5.23-osx10.6-x86/bin
 export PATH=/usr/local/php5/bin:$PATH
 
 # Editor of choice
-export EDITOR="subl"
+export EDITOR="vim"
 
+# Set npm global install directory and n (node version manager) prefix
+npm config set prefix ~/.npm-global
+export PATH=~/.npm-global/bin:$PATH
+export N_PREFIX=~/.n
+
+# Set default options for less
+# This e.g. makes git diffs always paginate
+export LESS=iRc
+
+# Up/down keys searches history with what's already typed, instead of simply
+# stepping through the history.
+# https://stackoverflow.com/questions/1030182/how-do-i-change-bash-history-completion-to-complete-whats-already-on-the-line
+if [[ $- == *i* ]]
+then
+  bind '"\e[A": history-search-backward'
+  bind '"\e[B": history-search-forward'
+fi
 
 # Color from:
 # https://wiki.archlinux.org/index.php/Color_Bash_Prompt
@@ -88,3 +105,5 @@ On_IWhite='\e[0;107m'   # White
 
 PS1="\W\\[$BCyan\](\$)\[$Color_Off\] \[$BYellow\]⌁\[$Color_Off\] "
 
+# https://github.com/AuditeMarlow/base16-manager/
+base16-manager set dracula
