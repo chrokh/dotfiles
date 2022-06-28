@@ -189,10 +189,12 @@ set t_Co=256
 let base16colorspace=256 " https://github.com/chriskempson/base16-vim
 syntax enable
 
-" Source color configuration
-" https://github.com/AuditeMarlow/base16-manager
-if filereadable(expand("~/.vim/colorscheme.vim"))
-  source ~/.vim/colorscheme.vim
+" Sync colorscheme with base16-shell theme
+" https://github.com/base16-project/base16-shell
+if exists('$BASE16_THEME')
+    \ && (!exists('g:colors_name') || g:colors_name != 'base16-$BASE16_THEME')
+  let base16colorspace=256
+  colorscheme base16-$BASE16_THEME
 endif
 
 " Searching

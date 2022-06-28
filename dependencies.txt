@@ -1,0 +1,2 @@
+https://github.com/base16-project/base16-shell
+https://github.com/base16-project/base16-vim
